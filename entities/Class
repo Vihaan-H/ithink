@@ -1,0 +1,22 @@
+{
+  "name": "Class",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Class name e.g. 'Period 1 - Math'"
+    },
+    "teacher_id": {
+      "type": "string",
+      "description": "User ID of the teacher who owns this class"
+    },
+    "teacher_name": {
+      "type": "string",
+      "description": "Teacher's display name"
+    }
+  },
+  "required": [
+    "name",
+    "teacher_id"
+  ]
+}

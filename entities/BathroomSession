@@ -1,0 +1,52 @@
+{
+  "name": "BathroomSession",
+  "type": "object",
+  "properties": {
+    "student_id": {
+      "type": "string",
+      "description": "The student's card/badge ID"
+    },
+    "student_name": {
+      "type": "string",
+      "description": "Student's full name"
+    },
+    "grade": {
+      "type": "string",
+      "description": "Student's grade"
+    },
+    "class_id": {
+      "type": "string",
+      "description": "The class this session belongs to"
+    },
+    "check_in_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the student checked in"
+    },
+    "check_out_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the student checked out"
+    },
+    "duration_minutes": {
+      "type": "number",
+      "description": "Total duration in minutes"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "completed"
+      ],
+      "default": "active",
+      "description": "Whether the session is ongoing or completed"
+    }
+  },
+  "required": [
+    "student_id",
+    "student_name",
+    "check_in_time",
+    "status",
+    "class_id"
+  ]
+}
