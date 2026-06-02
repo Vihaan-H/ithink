@@ -4,12 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --mode app",
+    "build": "vite build --mode app",
     "lint": "eslint . --quiet",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc -p ./jsconfig.json",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "demo": "vite --mode demo",
+    "build:demo": "vite build --mode demo"
   },
   "dependencies": {
     "@base44/sdk": "^0.8.31",
